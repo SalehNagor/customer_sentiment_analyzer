@@ -95,7 +95,7 @@ const TrendAlertWidget = () => {
           <Icon name="TrendingUp" size={20} className="text-rose-400" />
         </div>
       </div>
-
+      <div className="divide-y divide-border max-h-[300px] overflow-y-auto">
       <div className="space-y-3">
         {trendAlerts?.map((alert) => (
           <div 
@@ -131,7 +131,7 @@ const TrendAlertWidget = () => {
           </div>
         ))}
       </div>
-
+      </div>
       <div className="mt-6 pt-4 border-t border-slate-700">
         <div className="flex items-center justify-between text-sm">
           <span className="text-slate-400">Last updated</span>

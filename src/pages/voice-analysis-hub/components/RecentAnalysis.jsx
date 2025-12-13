@@ -60,7 +60,7 @@ const RecentAnalysis = ({ analyses }) => {
           </Button>
         </div>
       </div>
-      <div className="divide-y divide-border max-h-[600px] overflow-y-auto">
+      <div className="divide-y divide-border max-h-[769px] overflow-y-auto">
         {analyses?.map((analysis) => {
           const emotionConfig = getEmotionConfig(analysis?.sentimentScore);
           

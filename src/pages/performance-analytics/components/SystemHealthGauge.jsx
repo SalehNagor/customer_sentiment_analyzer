@@ -26,7 +26,7 @@ const SystemHealthGauge = ({ title, value, max, unit, icon, thresholds }) => {
   const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div className="bg-card border border-border rounded-lg p-6">
+    <div className="bg-card border border-border rounded-lg p-4">
       <div className="flex items-center gap-3 mb-4">
         <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-muted">
           <Icon name={icon} size={16} color="var(--color-muted-foreground)" />

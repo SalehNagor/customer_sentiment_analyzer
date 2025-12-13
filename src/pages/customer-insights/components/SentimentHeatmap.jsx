@@ -81,7 +81,7 @@ const SentimentHeatmap = () => {
   };
 
   return (
-    <div className="bg-card rounded-lg p-6 border border-border">
+    <div className="bg-card rounded-lg p-8 border border-border">
       <div className="flex items-center justify-between mb-6">
         <div>
           <h2 className="text-lg font-semibold text-foreground flex items-center gap-2">

@@ -124,7 +124,7 @@ const SentimentAlertFeed = () => {
           <span>Live</span>
         </div>
       </div>
-     
+     <div className="divide-y divide-border max-h-[383px] overflow-y-auto">
       <div className="flex-1 overflow-y-auto space-y-3 pr-2">
         {filteredAlerts?.map((alert) => {
           const severityConfig = getSeverityConfig(alert?.severity);
@@ -188,6 +188,7 @@ const SentimentAlertFeed = () => {
             </div>
           );
         })}
+      </div>
       </div>
       <div className="mt-4 pt-4 border-t border-border">
         <Button variant="ghost" size="sm" iconName="RefreshCw" fullWidth>
