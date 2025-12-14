@@ -159,14 +159,14 @@ const AdminUserManagement = () => {
   return (
     <>
       <Header />
-      <main className="pt-16 min-h-screen bg-slate-900">
+      <main className="pt-16 min-h-screen bg-background">
         <div className="container mx-auto p-6 max-w-[1600px]">
           {/* Page Header */}
           <div className="mb-6">
-            <h1 className="text-3xl font-bold text-white mb-2 font-['Inter']">
+            <h1 className="text-3xl font-bold text-foreground mb-2 font-['Inter']">
               User Management
             </h1>
-            <p className="text-slate-400 font-['Inter']">
+            <p className="text-muted-foreground font-['Inter']">
               Manage access and roles
             </p>
           </div>

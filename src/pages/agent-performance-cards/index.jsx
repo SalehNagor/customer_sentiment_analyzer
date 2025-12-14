@@ -251,62 +251,62 @@ const AgentPerformanceCards = () => {
   return (
     <>
       <Header />
-      <main className="pt-16 min-h-screen bg-slate-900">
+      <main className="pt-16 min-h-screen bg-background">
         <div className="container mx-auto p-6 max-w-[1600px]">
           {/* Page Header */}
           <div className="mb-6">
-            <h1 className="text-3xl font-bold text-white mb-2 font-['Inter']">Agent Performance Cards</h1>
-            <p className="text-slate-400 font-['Inter']">
+            <h1 className="text-3xl font-bold text-foreground mb-2 font-['Inter']">Agent Performance Cards</h1>
+            <p className="text-muted-foreground font-['Inter']">
               Comprehensive agent performance metrics and individual statistics dashboard
             </p>
           </div>
 
           {/* Stats Overview */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-4">
+            <div className="bg-card border border-border rounded-lg p-4">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-10 h-10 bg-blue-600/10 rounded-lg">
                   <Icon name="Users" size={20} color="rgb(37 99 235)" />
                 </div>
                 <div>
-                  <p className="text-slate-400 text-xs font-['Inter']">Total Agents</p>
-                  <p className="text-white text-2xl font-bold font-['Inter']">{stats?.totalAgents}</p>
+                  <p className="text-muted-foreground text-xs font-['Inter']">Total Agents</p>
+                  <p className="text-card-foreground text-2xl font-bold font-['Inter']">{stats?.totalAgents}</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-4">
+            <div className="bg-card border border-border rounded-lg p-4">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-10 h-10 bg-emerald-500/10 rounded-lg">
                   <Icon name="UserCheck" size={20} color="rgb(16 185 129)" />
                 </div>
                 <div>
-                  <p className="text-slate-400 text-xs font-['Inter']">Online Now</p>
-                  <p className="text-white text-2xl font-bold font-['Inter']">{stats?.onlineAgents}</p>
+                  <p className="text-muted-foreground text-xs font-['Inter']">Online Now</p>
+                  <p className="text-card-foreground text-2xl font-bold font-['Inter']">{stats?.onlineAgents}</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-4">
+            <div className="bg-card border border-border rounded-lg p-4">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-10 h-10 bg-blue-600/10 rounded-lg">
                   <Icon name="TrendingUp" size={20} color="rgb(37 99 235)" />
                 </div>
                 <div>
-                  <p className="text-slate-400 text-xs font-['Inter']">Avg Performance</p>
-                  <p className="text-white text-2xl font-bold font-['Inter']">{stats?.avgPerformance}%</p>
+                  <p className="text-muted-foreground text-xs font-['Inter']">Avg Performance</p>
+                  <p className="text-card-foreground text-2xl font-bold font-['Inter']">{stats?.avgPerformance}%</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-4">
+            <div className="bg-card border border-border rounded-lg p-4">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-10 h-10 bg-emerald-500/10 rounded-lg">
                   <Icon name="CheckCircle2" size={20} color="rgb(16 185 129)" />
                 </div>
                 <div>
-                  <p className="text-slate-400 text-xs font-['Inter']">Total Tickets Solved</p>
-                  <p className="text-white text-2xl font-bold font-['Inter']">{stats?.totalTickets}</p>
+                  <p className="text-muted-foreground text-xs font-['Inter']">Total Tickets Solved</p>
+                  <p className="text-card-foreground text-2xl font-bold font-['Inter']">{stats?.totalTickets}</p>
                 </div>
               </div>
             </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import Icon from '../AppIcon';
+import ThemeToggle from '../ThemeToggle';
 
 const Header = () => {
   const location = useLocation();
@@ -113,6 +114,8 @@ const Header = () => {
 
         {/* User Profile and Logout */}
         <div className="hidden md:flex items-center gap-4 ml-4">
+                  <ThemeToggle />
+
           <div className="relative">
             <button
               onClick={() => setShowUserMenu(!showUserMenu)}
@@ -180,12 +183,17 @@ const Header = () => {
               
               {/* Mobile User Profile and Logout */}
               <div className="border-t border-border mt-2 pt-2">
-                <div className="flex items-center gap-2 px-4 py-2 text-sm">
+                <div className="flex items-center justify-between px-4 py-2">
+                  <div className="flex items-center gap-2 text-sm">
                   <Icon name="User" size={16} />
                   <span className="text-foreground">{profile?.full_name || profile?.email}</span>
                   <span className="px-2 py-0.5 text-xs font-semibold bg-primary/10 text-primary rounded">
                     {profile?.role}
                   </span>
+                  </div>
+                   
+                    <ThemeToggle />
+                  
                 </div>
                 <button
                   onClick={() => {
